@@ -13,6 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             min-height: 100vh;
             background-color: #f9f9f9;
         }
@@ -49,6 +50,19 @@
         button:hover {
             background-color: #0056b3;
         }
+        .github-link {
+            margin-top: 20px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .github-link img {
+            width: 24px;
+            height: 24px;
+        }
     </style>
 </head>
 <body>
@@ -58,6 +72,10 @@
         <pre id="dns-list">Loading...</pre>
         <button id="copy-button">Copy List</button>
     </div>
+    <a class="github-link" href="https://github.com/MrJelly17/The-Ultimate-Tiktok-DNS-Server-List" target="_blank">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+        View on GitHub
+    </a>
 
     <script>
         const dnsListElement = document.getElementById('dns-list');
