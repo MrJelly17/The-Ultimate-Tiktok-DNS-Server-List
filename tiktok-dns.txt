@@ -1,8 +1,21 @@
 # TikTok DNS Server List
 # This list is used to block TikTok by filtering DNS queries.
-
-tiktok.com
-api.tiktok.com
-log.tiktokv.com
-ads.tiktok.com
-m.tiktok.com
+*.akadns.net.
+*.akamai.net.
+*.akamaiedge.net.
+*.akamaized.net.
+*.appbrothers.mobi.
+*.bytefcdn-ttpeu.com.
+*.byteoversea.net.
+*.edgesuite.net.
+*.fastly.net.
+*.ibytedtos.com.
+*.tiktok.com.
+*.tiktokcdn-eu.com.
+*.tiktokcdn-us.com.
+*.tiktokcdn.com.
+*.tiktokv.com.
+*.tiktokv.eu.
+*.tiktokw.eu.
+*.ttdns2.com.
+*.ttdns3.com.
