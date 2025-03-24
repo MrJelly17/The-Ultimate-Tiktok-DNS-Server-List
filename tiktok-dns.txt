@@ -1,0 +1,8 @@
+# TikTok DNS Server List
+# This list is used to block TikTok by filtering DNS queries.
+
+tiktok.com
+api.tiktok.com
+log.tiktokv.com
+ads.tiktok.com
+m.tiktok.com
