@@ -1,5 +1,6 @@
 # TikTok DNS Server List
 # This list is used to block TikTok by filtering DNS queries.
+
 *.akadns.net.
 *.akamai.net.
 *.akamaiedge.net.

@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.2] - Enhanced Web Page
+- Added basic styles to `index.html` for a centered layout and improved appearance.
+- Enabled scrolling for the DNS list to handle long content.
+- Added a "Copy List" button to copy the entire DNS list to the clipboard.
+
 ## [1.0.1] - Added Additional DNS Entries
 - Added new TikTok-related DNS entries to `tiktok-dns.txt`.
 

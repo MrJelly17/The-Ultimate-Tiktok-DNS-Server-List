@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate TikTok DNS Server List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .container {
+            text-align: center;
+            max-width: 800px;
+            width: 90%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-y: auto;
+            max-height: 300px;
+            text-align: left;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Ultimate TikTok DNS Server List</h1>
+        <p>This page displays the list of TikTok DNS servers from the <code>tiktok-dns.txt</code> file.</p>
+        <pre id="dns-list">Loading...</pre>
+        <button id="copy-button">Copy List</button>
+    </div>
+
+    <script>
+        const dnsListElement = document.getElementById('dns-list');
+        const copyButton = document.getElementById('copy-button');
+
+        // Fetch and display the DNS list
+        fetch('tiktok-dns.txt')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load DNS list.');
+                }
+                return response.text();
+            })
+            .then(data => {
+                dnsListElement.textContent = data;
+            })
+            .catch(error => {
+                dnsListElement.textContent = 'Error: ' + error.message;
+            });
+
+        // Copy the DNS list to clipboard
+        copyButton.addEventListener('click', () => {
+            const text = dnsListElement.textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('DNS list copied to clipboard!');
+            }).catch(err => {
+                alert('Failed to copy: ' + err);
+            });
+        });
+    </script>
+</body>
+</html>
