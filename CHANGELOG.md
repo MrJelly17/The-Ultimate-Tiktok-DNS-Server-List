@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.1.0] - Categorized DNS Entries
+- Improved organization of `tiktok-dns.txt` by separating main TikTok domains from DNS servers and subdomains.  This enhances clarity and simplifies management within DNS filtering tools.
+- Updated `README.md` to reflect the new categorization and provide clearer instructions.
+
 ## [1.0.2] - Enhanced Web Page
 - Added basic styles to `index.html` for a centered layout and improved appearance.
 - Enabled scrolling for the DNS list to handle long content.
